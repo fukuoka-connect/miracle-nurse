@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メンズ眉アートメイク | Miracle nurse -- その1秒が、すべてを決める</title>
+<meta name="description" content="30代営業マンのための医療アートメイク。看護師歴12年×営業歴8年の施術者が、あなたの第一印象を変える。オンライン診療対応で安心安全。">
+<meta name="keywords" content="眉,アートメイク,メンズ,男性,営業マン,医療アートメイク,Miracle nurse,ミラクルナース,福岡">
+<meta property="og:title" content="メンズ眉アートメイク | Miracle nurse">
+<meta property="og:description" content="30代営業マンのための医療アートメイク。看護師歴12年×営業歴8年の施術者が第一印象を変える。">
+<meta property="og:url" content="https://fukuoka-connect.github.io/miracle-nurse/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Miracle nurse">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://fukuoka-connect.github.io/miracle-nurse/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#F9F8F5;
+  --surface:#fff;
+  --dark:#1A1A2E;
+  --dark-mid:#2D2D3F;
+  --text:#3A3A4A;
+  --text-light:#7A7A8A;
+  --gold:#C49A6C;
+  --gold-hover:#A67C52;
+  --gold-light:#F3EBE0;
+  --blue:#5A9BB0;
+  --blue-pale:#E8F1F5;
+  --border:#E8E6E0;
+  --shadow:rgba(26,26,46,.06);
+  --radius:20px;
+  --section-py:clamp(80px,10vw,140px);
+  --section-px:clamp(24px,5vw,80px);
+  --heading-mb:clamp(40px,5vw,64px);
+  --card-gap:clamp(20px,3vw,32px);
+  --card-pad:clamp(28px,4vw,40px);
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Noto Sans JP",sans-serif;
+  font-size:15px;
+  line-height:1.85;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;border:none;cursor:pointer;background:none}
+
+.serif{font-family:"Cormorant Garamond",serif}
+.font-label{
+  font-family:"Cormorant Garamond",serif;
+  font-size:14px;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:600;
+  margin-bottom:14px;
+}
+
+/* ===== LAYOUT ===== */
+.container{max-width:1100px;margin:0 auto;padding-left:var(--section-px);padding-right:var(--section-px)}
+.section{padding-top:var(--section-py);padding-bottom:var(--section-py)}
+.section-heading{text-align:center;margin-bottom:var(--heading-mb)}
+.section-heading h2{font-size:clamp(24px,3.5vw,36px);font-weight:700;line-height:1.5;color:var(--dark)}
+.bg-white{background:var(--surface)}
+.bg-cream{background:var(--bg)}
+.bg-dark{background:var(--dark);color:#E8E6E0}
+.bg-dark .section-heading h2{color:#fff}
+.bg-dark .font-label{color:var(--gold)}
+
+/* ===== CARD ===== */
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:var(--card-pad);
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px var(--shadow)}
+.bg-dark .card{background:var(--dark-mid);border-color:rgba(255,255,255,.08)}
+
+/* ===== GRID ===== */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--card-gap)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--card-gap)}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr}}
+@media(max-width:640px){.grid-2{grid-template-columns:1fr}}
+
+/* ===== CTA BUTTON ===== */
+.cta-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--gold);color:#fff;font-weight:700;font-size:16px;
+  padding:18px 40px;border-radius:999px;
+  transition:background .2s,transform .15s;
+}
+.cta-btn:hover{background:var(--gold-hover);transform:scale(1.02)}
+.cta-btn-dark{background:var(--dark);color:#fff}
+.cta-btn-dark:hover{background:var(--dark-mid)}
+
+.loss-text{font-size:13px;color:var(--text-light);margin-top:16px;opacity:.7}
+.bg-dark .loss-text{color:rgba(255,255,255,.5)}
+
+/* ===== NAV ===== */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(249,248,245,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);height:64px;
+}
+.nav-inner{
+  max-width:1100px;margin:0 auto;padding:0 var(--section-px);
+  height:100%;display:flex;align-items:center;justify-content:space-between;
+}
+.nav-logo{font-family:"Cormorant Garamond",serif;font-size:20px;font-weight:600;color:var(--dark)}
+.nav-logo small{display:block;font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--text-light);font-family:"Noto Sans JP",sans-serif;font-weight:400}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{font-size:13px;color:var(--text-light);transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#fff;font-size:13px;font-weight:700;padding:8px 20px;border-radius:999px;transition:background .2s}
+.nav-cta:hover{background:var(--gold-hover)}
+.nav-hamburger{display:none;color:var(--dark);padding:8px}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-hamburger{display:block}
+}
+
+.mobile-menu{display:none;position:fixed;top:64px;left:0;right:0;z-index:99;background:var(--surface);border-bottom:1px solid var(--border);padding:20px var(--section-px) 24px}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;font-size:15px;color:var(--text-light);padding:14px 0;border-bottom:1px solid var(--border);transition:color .2s}
+.mobile-menu a:last-child{border-bottom:none}
+.mobile-menu a:hover{color:var(--gold)}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  background:linear-gradient(135deg,var(--bg) 0%,var(--gold-light) 100%);
+  padding-top:100px;padding-bottom:60px;
+}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center}
+.hero-badge{
+  display:inline-block;font-family:"Cormorant Garamond",serif;font-size:12px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold);
+  border:1px solid var(--gold);padding:6px 16px;border-radius:999px;margin-bottom:24px;
+}
+.hero-eyebrow{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(18px,2.5vw,28px);color:var(--gold);margin-bottom:12px}
+.hero h1{font-size:clamp(28px,4.5vw,48px);font-weight:700;color:var(--dark);line-height:1.45;margin-bottom:24px}
+.hero-desc{color:var(--text-light);font-size:clamp(14px,1.6vw,16px);line-height:1.9;margin-bottom:36px;max-width:460px}
+.hero-img{
+  aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;
+  background:linear-gradient(135deg,var(--blue-pale),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:var(--text-light);text-align:center;padding:40px;
+}
+.hero-stat{
+  display:inline-flex;align-items:center;gap:16px;
+  background:var(--surface);border:1px solid var(--border);border-radius:16px;
+  padding:16px 24px;margin-top:32px;box-shadow:0 8px 32px var(--shadow);
+}
+.hero-stat-num{font-family:"Cormorant Garamond",serif;font-size:36px;font-weight:600;color:var(--blue);line-height:1}
+.hero-stat-label{font-size:13px;color:var(--text-light)}
+@media(max-width:768px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-img{max-width:400px;margin:0 auto}
+}
+
+/* ===== STRIP ===== */
+.strip{background:var(--dark);color:#fff;padding:28px 0}
+.strip-inner{display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px}
+.strip-item{text-align:center;padding:8px 28px}
+.strip-value{font-family:"Cormorant Garamond",serif;font-size:clamp(28px,4vw,42px);font-weight:600;line-height:1.1}
+.strip-label{font-size:12px;color:rgba(255,255,255,.6);margin-top:6px;letter-spacing:.05em}
+
+/* ===== EMPATHY ===== */
+.empathy{max-width:800px;margin:0 auto;text-align:center}
+.empathy-quote{
+  font-size:clamp(20px,3vw,30px);font-weight:700;color:var(--dark);
+  line-height:1.6;margin-bottom:32px;
+}
+.empathy-text{font-size:15px;color:var(--text);line-height:2;text-align:left}
+
+/* ===== DATA ===== */
+.data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--card-gap);max-width:900px;margin:0 auto}
+.data-card{text-align:center;padding:var(--card-pad)}
+.data-num{font-family:"Cormorant Garamond",serif;font-size:clamp(40px,6vw,64px);font-weight:600;color:var(--blue);line-height:1;margin-bottom:12px}
+.data-unit{font-size:14px;color:var(--blue);margin-bottom:16px}
+.data-desc{font-size:13px;color:var(--text-light);line-height:1.7}
+@media(max-width:640px){.data-grid{grid-template-columns:1fr}}
+
+/* ===== ABOUT ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:start}
+.about-img{
+  aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;
+  background:linear-gradient(135deg,var(--blue-pale),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:var(--text-light);text-align:center;padding:40px;
+}
+.about-text h2{font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--dark);line-height:1.55;margin-bottom:28px}
+.about-desc{font-size:15px;line-height:2;color:var(--text);margin-bottom:36px}
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-item{display:flex;gap:24px;padding:24px 0;border-bottom:1px solid var(--border)}
+.tl-item:last-child{border-bottom:none}
+.tl-label{flex-shrink:0;width:80px;font-size:13px;font-weight:700;color:var(--gold)}
+.tl-text{font-size:14px;color:var(--text-light);line-height:1.8}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr}.about-img{max-width:400px;margin:0 auto 32px}}
+
+/* ===== MENU ===== */
+.menu-subtitle{text-align:center;color:var(--text-light);font-size:14px;margin-top:-24px;margin-bottom:var(--heading-mb)}
+.menu-card{padding:0;overflow:hidden}
+.menu-img{
+  aspect-ratio:16/10;
+  background:linear-gradient(135deg,var(--blue-pale),var(--gold-light));
+  display:flex;align-items:center;justify-content:center;
+  font-size:14px;color:var(--text-light);padding:24px;text-align:center;
+  position:relative;
+}
+.menu-badge{
+  position:absolute;top:16px;left:16px;
+  background:var(--gold);color:#fff;font-size:11px;font-weight:700;
+  padding:5px 14px;border-radius:999px;letter-spacing:.05em;
+}
+.menu-body{padding:28px 32px 32px}
+.menu-body h3{font-size:18px;font-weight:700;color:var(--dark);margin-bottom:14px}
+.menu-body p{font-size:14px;color:var(--text-light);line-height:1.85}
+
+/* ===== PROCESS ===== */
+.process-bg{background:#3A2E24;color:#E8E6E0}
+.process-bg .font-label{color:var(--gold)}
+.process-bg .section-heading h2{color:#fff}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--card-gap);counter-reset:step}
+.process-card{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--radius);padding:var(--card-pad);
+  counter-increment:step;position:relative;
+}
+.process-card::before{
+  content:counter(step);
+  font-family:"Cormorant Garamond",serif;font-size:48px;font-weight:600;
+  color:var(--gold);opacity:.4;line-height:1;margin-bottom:16px;display:block;
+}
+.process-card h3{font-size:16px;font-weight:700;color:#fff;margin-bottom:12px}
+.process-card p{font-size:13px;color:rgba(255,255,255,.6);line-height:1.85}
+.process-note{text-align:center;font-size:13px;color:rgba(255,255,255,.4);margin-top:36px}
+@media(max-width:900px){.process-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.process-grid{grid-template-columns:1fr}}
+
+/* ===== CTA BAND ===== */
+.cta-band{
+  background:linear-gradient(135deg,var(--gold-light) 0%,var(--bg) 100%);
+  border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  text-align:center;
+}
+.cta-band h2{font-size:clamp(22px,3vw,34px);font-weight:700;color:var(--dark);line-height:1.5;margin-bottom:20px}
+.cta-band .cta-desc{color:var(--text-light);max-width:500px;margin:0 auto 36px;font-size:15px}
+
+/* ===== VOICE ===== */
+.voice-card .stars{color:#F0C040;font-size:16px;letter-spacing:3px;margin-bottom:20px}
+.voice-card p{font-size:14px;color:var(--text);line-height:1.9;margin-bottom:24px}
+.voice-footer{border-top:1px solid var(--border);padding-top:20px;display:flex;justify-content:space-between;align-items:center}
+.voice-name{font-weight:700;font-size:14px;color:var(--dark)}
+.voice-meta{font-size:12px;color:var(--text-light)}
+
+/* ===== STORY ===== */
+.story{max-width:700px;margin:0 auto}
+.story-title{font-size:clamp(20px,3vw,28px);font-weight:700;color:var(--dark);line-height:1.65;margin-bottom:32px}
+.story-text{font-size:15px;line-height:2.1;color:var(--text);margin-bottom:24px}
+.story-sig{margin-top:40px;padding-top:28px;border-top:1px solid var(--border)}
+.story-sig-name{font-size:18px;font-weight:700;color:var(--dark);margin-bottom:8px}
+.story-sig-title{font-size:13px;color:var(--text-light);line-height:1.8}
+
+/* ===== FOOTER ===== */
+.footer{background:#141422;color:rgba(255,255,255,.5);padding:64px 0 40px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px;margin-bottom:48px}
+.footer-brand{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:12px}
+.footer-info{font-size:13px;line-height:1.9}
+.footer h4{font-size:13px;font-weight:700;color:rgba(255,255,255,.4);margin-bottom:16px;letter-spacing:.05em}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:8px}
+.footer-links a{font-size:14px;color:rgba(255,255,255,.5);transition:color .2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;text-align:center;font-size:12px}
+@media(max-width:640px){.footer-grid{grid-template-columns:1fr}}
+
+/* ===== MOBILE CTA ===== */
+.mobile-cta{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
+  background:rgba(249,248,245,.95);backdrop-filter:blur(12px);
+  border-top:1px solid var(--border);padding:12px 20px;
+}
+.mobile-cta .cta-btn{width:100%;justify-content:center;font-size:15px;padding:16px 20px;min-height:48px}
+@media(max-width:768px){
+  .mobile-cta{display:block}
+  body{padding-bottom:80px}
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+</style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HealthAndBeautyBusiness","name":"Miracle nurse（株式会社Miracle nurse）","url":"https://fukuoka-connect.github.io/miracle-nurse/","description":"30代営業マンのための医療アートメイク専門","founder":{"@type":"Person","name":"佐用貴歩","jobTitle":"看護師 / アートメイクアーティスト"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"施術メニュー","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"眉アートメイク"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"頭皮アートメイク"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"リップアートメイク"}}]},"sameAs":["https://miraclenurse.site/"]}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Miracle nurse<small>Medical Art Makeup</small></a>
+    <ul class="nav-links">
+      <li><a href="#menu">メニュー</a></li>
+      <li><a href="#about">施術者について</a></li>
+      <li><a href="#voice">お客様の声</a></li>
+    </ul>
+    <a href="#" class="nav-cta">無料カウンセリング予約</a><!-- TODO: LINE URL -->
+    <button class="nav-hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')" aria-label="メニュー">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="#menu" onclick="this.parentElement.classList.remove('open')">メニュー</a>
+  <a href="#about" onclick="this.parentElement.classList.remove('open')">施術者について</a>
+  <a href="#voice" onclick="this.parentElement.classList.remove('open')">お客様の声</a>
+  <a href="#" onclick="this.parentElement.classList.remove('open')">無料カウンセリング予約</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-badge">Medical Art Makeup for Men</span>
+        <p class="hero-eyebrow">"The first impression"</p>
+        <h1>その1秒が、<br>すべてを決める。</h1>
+        <p class="hero-desc">初対面の印象は、眉ひとつで変わる。<br>30代営業マンのための医療アートメイク。</p>
+        <a href="#" class="cta-btn">無料カウンセリング予約 &rarr;</a><!-- TODO: LINE URL -->
+        <p class="loss-text">※ 印象を変えるタイミングは、早いほど効果が出ます</p>
+        <div class="hero-stat">
+          <div class="hero-stat-num">0.5<span style="font-size:20px">秒</span></div>
+          <div class="hero-stat-label">第一印象が<br>決まる時間</div>
+        </div>
+      </div>
+      <div class="hero-img">【写真】施術後の眉アートメイク<br>ビフォーアフター</div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP (アンカリング) -->
+<section class="strip">
+  <div class="container strip-inner">
+    <div class="strip-item"><div class="strip-value">12<span style="font-size:18px">年</span></div><div class="strip-label">看護師歴</div></div>
+    <div class="strip-item"><div class="strip-value">8<span style="font-size:18px">年</span></div><div class="strip-label">営業経験</div></div>
+    <div class="strip-item"><div class="strip-value">20<span style="font-size:18px">件/月</span></div><div class="strip-label">予約実績</div></div>
+    <div class="strip-item"><div class="strip-value">100<span style="font-size:18px">%</span></div><div class="strip-label">医療機関監修</div></div>
+  </div>
+</section>
+
+<!-- EMPATHY -->
+<section class="section bg-cream reveal">
+  <div class="container">
+    <div class="empathy">
+      <p class="font-label">Empathy</p>
+      <p class="empathy-quote">「男がアートメイクなんて…」<br>そう思っていませんか？</p>
+      <p class="empathy-text">名刺交換の瞬間。プレゼンの冒頭。オンライン会議で画面越しに映る顔。<br><br>ビジネスの現場で、あなたの「顔」は無数の人に見られています。そして眉は、清潔感・信頼感・自信を伝える最も重要なパーツ。<br><br>今、第一印象を戦略的にデザインする男性が増えています。アートメイクは、もはやビジネスマンの新しい身だしなみです。</p>
+    </div>
+  </div>
+</section>
+
+<!-- DATA -->
+<section class="section bg-white reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="font-label">Why it matters</p>
+      <h2>なぜ「眉」が成約率に影響するのか</h2>
+    </div>
+    <div class="data-grid">
+      <div class="card data-card">
+        <div class="data-num">0.5<span style="font-size:28px">秒</span></div>
+        <div class="data-unit">First impression</div>
+        <div class="data-desc">人が第一印象を形成するまでの時間</div>
+      </div>
+      <div class="card data-card">
+        <div class="data-num">55<span style="font-size:28px">%</span></div>
+        <div class="data-unit">Visual information</div>
+        <div class="data-desc">第一印象のうち視覚情報が占める割合</div>
+      </div>
+      <div class="card data-card">
+        <div class="data-num">80<span style="font-size:28px">%</span></div>
+        <div class="data-unit">Eyebrow effect</div>
+        <div class="data-desc">顔の印象のうち眉が左右する割合</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA MID -->
+<section class="section cta-band reveal">
+  <div class="container" style="text-align:center">
+    <p class="font-label">Contact</p>
+    <h2 style="font-size:clamp(22px,3vw,34px);font-weight:700;color:var(--dark);line-height:1.5;margin-bottom:20px">まずは無料カウンセリングから</h2>
+    <p class="cta-desc">LINEでお気軽にご相談ください。あなたの骨格に合わせた最適な眉をご提案します。</p>
+    <a href="#" class="cta-btn">無料カウンセリング予約 &rarr;</a><!-- TODO: LINE URL -->
+    <p class="loss-text">※ 第一印象を変えるベストタイミングは「今」です</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-cream reveal">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">【写真】佐用貴歩<br>プロフィール写真</div>
+      <div>
+        <p class="font-label">About the artist</p>
+        <h2 class="about-text" style="font-size:clamp(22px,3vw,32px);font-weight:700;color:var(--dark);line-height:1.55;margin-bottom:28px">看護師12年。営業8年。<br>だからこそ、わかること。</h2>
+        <p class="about-desc">救命救急の現場で12年。その後、営業の世界に飛び込み8年。医療の安全基準と、ビジネスにおける第一印象の重要性。この2つを知っているからこそ、男性に必要なアートメイクがわかります。</p>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-label">看護師歴</div><div class="tl-text">救命救急で12年勤務。医療の安全基準を身体で覚える</div></div>
+          <div class="tl-item"><div class="tl-label">営業歴</div><div class="tl-text">8年間の営業経験。第一印象の重要性を身をもって体験</div></div>
+          <div class="tl-item"><div class="tl-label">現在</div><div class="tl-text">医療×営業、両方の経験を活かしたアートメイクを提供</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="section bg-white reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="font-label">Menu</p>
+      <h2>施術メニュー</h2>
+    </div>
+    <p class="menu-subtitle">すべての施術はオンライン診療を経た上で、医療機関監修のもと安全に行います。</p>
+    <div class="grid-3">
+      <div class="card menu-card">
+        <div class="menu-img"><span class="menu-badge">MOST POPULAR</span>【写真】眉アートメイク施術例</div>
+        <div class="menu-body"><h3>眉のアートメイク</h3><p>第一印象を決める眉を、あなたの骨格に合わせてデザイン。自然な仕上がりで、毎朝の手入れも不要に。</p></div>
+      </div>
+      <div class="card menu-card">
+        <div class="menu-img"><span class="menu-badge">FOR CONFIDENCE</span>【写真】頭皮アートメイク施術例</div>
+        <div class="menu-body"><h3>頭皮のアートメイク</h3><p>薄毛・生え際の悩みに。自然な毛流れを再現し、見た目の印象を若々しく。</p></div>
+      </div>
+      <div class="card menu-card">
+        <div class="menu-img"><span class="menu-badge">HEALTHY LOOK</span>【写真】リップアートメイク施術例</div>
+        <div class="menu-body"><h3>リップのアートメイク</h3><p>血色感のある健康的な唇に。顔全体のトーンが上がり、活力ある印象を。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS (段階的情報開示) -->
+<section class="section process-bg reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="font-label">Process</p>
+      <h2>施術の流れ</h2>
+      <p style="color:rgba(255,255,255,.5);font-size:14px;margin-top:16px">オンライン診療で安心。初めての方でも丁寧にサポートします。</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-card"><h3>無料カウンセリング</h3><p>LINEでお気軽にご相談。ご要望・不安をお聞きします。</p></div>
+      <div class="process-card"><h3>オンライン診療</h3><p>医師によるオンライン診療。安全性を確認した上で施術へ。</p></div>
+      <div class="process-card"><h3>デザイン＆施術</h3><p>骨格に合わせたデザインを提案。納得の上で施術を開始。</p></div>
+      <div class="process-card"><h3>アフターケア</h3><p>施術後もLINEでサポート。定着まで丁寧にフォロー。</p></div>
+    </div>
+    <p class="process-note">※ 医療アートメイクのため、安心・安全な施術環境をお約束します</p>
+  </div>
+</section>
+
+<!-- VOICE -->
+<section id="voice" class="section bg-cream reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="font-label">Voice</p>
+      <h2>お客様の声</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card voice-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>こんなに見た目が変わったのは嬉しい。商談での自信が明らかに違います。</p>
+        <div class="voice-footer"><span class="voice-name">30代 / 営業職</span></div>
+      </div>
+      <div class="card voice-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>最初は抵抗がありましたが、仕上がりが自然すぎて周囲にバレません。毎朝の時短にもなりました。</p>
+        <div class="voice-footer"><span class="voice-name">30代 / 経営者</span></div>
+      </div>
+      <div class="card voice-card">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>看護師出身の先生なので、衛生面・安全面が安心。男性客にも慣れていて気楽でした。</p>
+        <div class="voice-footer"><span class="voice-name">40代 / 会社員</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="section bg-white reveal">
+  <div class="container">
+    <div class="story">
+      <p class="font-label">Story</p>
+      <p class="story-title">見た目で人は自信を持つことができ、その瞬間から人生を変えることができる。</p>
+      <p class="story-text">救命救急の看護師として12年。命と向き合う日々の中で、「人の見た目がその人の人生を左右する」瞬間を何度も目にしてきました。</p>
+      <p class="story-text">その後、営業の世界に飛び込み8年。初対面の3秒で勝負が決まるビジネスの現場で、第一印象の力を体感しました。</p>
+      <p class="story-text">医療の安全性と、ビジネスにおける見た目の重要性。この2つを掛け合わせたアートメイクで、あなたの第一印象を変えたい。それが私の想いです。</p>
+      <div class="story-sig">
+        <div class="story-sig-name">佐用 貴歩</div>
+        <div class="story-sig-title">Miracle nurse 代表<br>看護師 / アートメイクアーティスト</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="section bg-dark" style="text-align:center">
+  <div class="container">
+    <p class="font-label">Book now</p>
+    <h2 style="font-size:clamp(22px,3.5vw,36px);font-weight:700;color:#fff;line-height:1.5;margin-bottom:12px">その眉で、<br>いくつの契約を逃しましたか。</h2>
+    <p style="color:var(--gold);font-size:15px;margin-bottom:24px">知らないままは、もったいない。</p>
+    <p style="color:rgba(255,255,255,.6);max-width:500px;margin:0 auto 40px;font-size:15px">まずは無料カウンセリングから。LINEでお気軽にご相談ください。</p>
+    <a href="#" class="cta-btn">無料カウンセリング予約 &rarr;</a><!-- TODO: LINE URL -->
+    <p class="loss-text">※ 無理な勧誘は一切ありません</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Miracle nurse</div>
+        <p class="footer-info">株式会社Miracle nurse<br>看護師歴12年×営業歴8年の施術者による<br>メンズ医療アートメイク専門</p>
+      </div>
+      <div>
+        <h4>MENU</h4>
+        <ul class="footer-links">
+          <li><a href="#menu">眉のアートメイク</a></li>
+          <li><a href="#menu">頭皮のアートメイク</a></li>
+          <li><a href="#menu">リップのアートメイク</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Miracle nurse. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- MOBILE CTA -->
+<div class="mobile-cta">
+  <a href="#" class="cta-btn">無料カウンセリング予約 &rarr;</a><!-- TODO: LINE URL -->
+</div>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
