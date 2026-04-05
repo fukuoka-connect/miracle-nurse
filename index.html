@@ -22,20 +22,21 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
 :root{
-  --bg:#F9F8F5;
-  --surface:#fff;
-  --dark:#1A1A2E;
-  --dark-mid:#2D2D3F;
+  --bg:#FEFDFB;
+  --bg-alt:#FAF7F2;
+  --surface:#F0EBE3;
+  --dark:#2C2825;
+  --dark-mid:#3D3329;
   --text:#3A3A4A;
   --text-light:#7A7A8A;
-  --gold:#C49A6C;
-  --gold-hover:#A67C52;
+  --gold:#B8963E;
+  --gold-hover:#9A7A30;
   --gold-light:#F3EBE0;
   --blue:#5A9BB0;
   --blue-pale:#E8F1F5;
-  --border:#E8E6E0;
-  --shadow:rgba(26,26,46,.06);
-  --radius:20px;
+  --border:#E8E2D8;
+  --shadow:rgba(44,40,37,.06);
+  --radius:24px;
   --section-py:clamp(80px,10vw,140px);
   --section-px:clamp(24px,5vw,80px);
   --heading-mb:clamp(40px,5vw,64px);
@@ -76,15 +77,15 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 .section{padding-top:var(--section-py);padding-bottom:var(--section-py)}
 .section-heading{text-align:center;margin-bottom:var(--heading-mb)}
 .section-heading h2{font-size:clamp(24px,3.5vw,36px);font-weight:700;line-height:1.5;color:var(--dark)}
-.bg-white{background:var(--surface)}
-.bg-cream{background:var(--bg)}
+.bg-light{background:var(--bg)}
+.bg-alt{background:var(--bg-alt)}
 .bg-dark{background:var(--dark);color:#E8E6E0}
 .bg-dark .section-heading h2{color:#fff}
 .bg-dark .font-label{color:var(--gold)}
 
 /* ===== CARD ===== */
 .card{
-  background:var(--surface);
+  background:#fff;
   border:1px solid var(--border);
   border-radius:var(--radius);
   padding:var(--card-pad);
@@ -116,7 +117,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 /* ===== NAV ===== */
 .nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(249,248,245,.92);backdrop-filter:blur(12px);
+  background:rgba(254,253,251,.92);backdrop-filter:blur(12px);
   border-bottom:1px solid var(--border);height:64px;
 }
 .nav-inner{
@@ -235,7 +236,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 .menu-body p{font-size:14px;color:var(--text-light);line-height:1.85}
 
 /* ===== PROCESS ===== */
-.process-bg{background:#3A2E24;color:#E8E6E0}
+.process-bg{background:var(--dark-mid);color:#E8E6E0}
 .process-bg .font-label{color:var(--gold)}
 .process-bg .section-heading h2{color:#fff}
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--card-gap);counter-reset:step}
@@ -257,7 +258,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 
 /* ===== CTA BAND ===== */
 .cta-band{
-  background:linear-gradient(135deg,var(--gold-light) 0%,var(--bg) 100%);
+  background:linear-gradient(135deg,var(--bg-alt) 0%,var(--surface) 100%);
   border-top:1px solid var(--border);border-bottom:1px solid var(--border);
   text-align:center;
 }
@@ -280,7 +281,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 .story-sig-title{font-size:13px;color:var(--text-light);line-height:1.8}
 
 /* ===== FOOTER ===== */
-.footer{background:#141422;color:rgba(255,255,255,.5);padding:64px 0 40px}
+.footer{background:var(--dark);color:rgba(255,255,255,.5);padding:64px 0 40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px;margin-bottom:48px}
 .footer-brand{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;color:#fff;margin-bottom:12px}
 .footer-info{font-size:13px;line-height:1.9}
@@ -295,7 +296,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 /* ===== MOBILE CTA ===== */
 .mobile-cta{
   display:none;position:fixed;bottom:0;left:0;right:0;z-index:100;
-  background:rgba(249,248,245,.95);backdrop-filter:blur(12px);
+  background:rgba(254,253,251,.95);backdrop-filter:blur(12px);
   border-top:1px solid var(--border);padding:12px 20px;
 }
 .mobile-cta .cta-btn{width:100%;justify-content:center;font-size:15px;padding:16px 20px;min-height:48px}
@@ -369,7 +370,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 </section>
 
 <!-- EMPATHY -->
-<section class="section bg-cream reveal">
+<section class="section bg-alt reveal">
   <div class="container">
     <div class="empathy">
       <p class="font-label">Empathy</p>
@@ -380,7 +381,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 </section>
 
 <!-- DATA -->
-<section class="section bg-white reveal">
+<section class="section bg-light reveal">
   <div class="container">
     <div class="section-heading">
       <p class="font-label">Why it matters</p>
@@ -418,7 +419,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section bg-cream reveal">
+<section id="about" class="section bg-alt reveal">
   <div class="container">
     <div class="about-grid">
       <div class="about-img">【写真】佐用貴歩<br>プロフィール写真</div>
@@ -437,7 +438,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 </section>
 
 <!-- MENU -->
-<section id="menu" class="section bg-white reveal">
+<section id="menu" class="section bg-light reveal">
   <div class="container">
     <div class="section-heading">
       <p class="font-label">Menu</p>
@@ -480,7 +481,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 </section>
 
 <!-- VOICE -->
-<section id="voice" class="section bg-cream reveal">
+<section id="voice" class="section bg-alt reveal">
   <div class="container">
     <div class="section-heading">
       <p class="font-label">Voice</p>
@@ -507,7 +508,7 @@ button{font:inherit;border:none;cursor:pointer;background:none}
 </section>
 
 <!-- STORY -->
-<section class="section bg-white reveal">
+<section class="section bg-light reveal">
   <div class="container">
     <div class="story">
       <p class="font-label">Story</p>
